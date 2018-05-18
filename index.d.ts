@@ -82,6 +82,13 @@ export interface CameraOptions {
       *      设置 compressMultiple=8，表示返回的小图为原图（大图）的 1/8
       */
      compressMultiple?: number;
+
+     /**
+      * 相机类型：0 为系统相机 ， 1 为自定义相机 。默认为0（系统相机）  
+      * 注意：
+      *    这个参数只对Android管用
+      */
+     cameraType?:number;
 }
 /**
  * iOS-only parameters that specify the anchor element location and arrow direction
