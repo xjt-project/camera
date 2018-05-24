@@ -83,12 +83,21 @@ export interface CameraOptions {
       */
      compressMultiple?: number;
 
+
      /**
       * 相机类型：0 为系统相机 ， 1 为自定义相机 。默认为0（系统相机）  
       * 注意：
       *    这个参数只对Android管用
       */
      cameraType?:number;
+
+     /**
+      * 是否将图片存储为离线图片  可选参数， 默认为0 ；
+      *  如果为1会将图片存储为离线图片，
+      *  如果为0存储为临时图片，
+      *   
+      */
+     isSaveOfflinePicture?:number;
 }
 /**
  * iOS-only parameters that specify the anchor element location and arrow direction
@@ -249,4 +258,10 @@ export declare class Camera extends IonicNativePlugin {
     */
     clearCacheImageFromDisk(): Promise<any>;
 
+    clearImageByPath(paths?:Array<string>): Promise<any>;
+
+    /**
+     * 清除所有离线存储的图片
+     */
+    clearAllOfflinePicture(): Promise<any>;
 }

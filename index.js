@@ -181,8 +181,10 @@ var Camera = (function (_super) {
     * @returns {Promise<any>}
     */
     Camera.prototype.clearCacheImageFromDisk = function () { return; };
-
+    Camera.prototype.clearImageByPath = function (paths) { return; };
     ;
+    
+    Camera.prototype.clearAllOfflinePicture = function () { return; };
     Camera.decorators = [
         { type: Injectable },
     ];
@@ -213,6 +215,24 @@ var Camera = (function (_super) {
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", Promise)
     ], Camera.prototype, "clearCacheImageFromDisk", null);
+
+    __decorate([
+        Cordova({
+            platforms: ['iOS','android']
+        }),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", []),
+        __metadata("design:returntype", Promise)
+    ], Camera.prototype, "clearAllOfflinePicture", null);
+    
+    __decorate([
+        Cordova({
+            callbackOrder: 'reverse'
+        }),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", [Object]),
+        __metadata("design:returntype", Promise)
+    ], Camera.prototype, "clearImageByPath", null);
 
     Camera = __decorate([
         Plugin({
