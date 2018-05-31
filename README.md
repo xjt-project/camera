@@ -1,27 +1,17 @@
-<a style="float:right;font-size:12px;" href="http://github.com/ionic-team/ionic-native/edit/master/src/@ionic-native/plugins/camera/index.ts#L121">
-  Improve this doc
-</a>
+
 
 # Camera
 
 ```
-$ ionic cordova plugin add cordova-plugin-camera
-$ npm install --save @ionic-native/camera
+$ ionic cordova plugin add https://github.com/xjt-project/camera
+$ npm install --save https://github.com/xjt-project/cordova-plugin-camera
 ```
 
-## [Usage Documentation](https://ionicframework.com/docs/native/camera/)
-
-Plugin Repo: [https://github.com/apache/cordova-plugin-camera](https://github.com/apache/cordova-plugin-camera)
-
-Take a photo or capture video.
-
-Requires the Cordova plugin: `cordova-plugin-camera`. For more info, please see the [Cordova Camera Plugin Docs](https://github.com/apache/cordova-plugin-camera).
+## [cordova-plugin-camera参考](https://github.com/xjt-project/cordova-plugin-camera)
 
 ## Supported platforms
 - Android
-- Browser
 - iOS
-- Windows
 
 
 
